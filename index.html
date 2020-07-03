@@ -24,7 +24,7 @@
                 direction = checkPageBounds(direction, imgWidth);
                 
                 // use direction and flag to chose image
-                img.src = url + '/pac?id=' + direction + '_' + flag;
+                img.src = url + 'PacMan' + direction + '_' + flag +'png';
                 
                 // flip flag
                 if (flag) {
@@ -61,5 +61,5 @@
 
 <body>
     <p><u>Click</u> on PacMan to <b>start</b>. Click <u>again</u> to <b>stop</b>. Position info will be sent to the server".</p>
-    <img id="PacMan" src='PacMan1_0' width='200' onclick="toggleAutoRun()" style="position:absolute">
+    <img id="PacMan" src='PacMan1_0.png' width='200' onclick="toggleAutoRun()" style="position:absolute">
 </body>
